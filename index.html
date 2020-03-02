@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>"Three Shots" Analysis</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Krub&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous">
+    </script>
+  </head>
+  
+  <body>
+    <h1>"Three Shots" Analysis</h1>
+    
+    <h2>By: Will Rousseau and Charlie Engler</h2>
+    
+    <div style='text-align:center;'>
+      <button onclick="location.href='depiction.html'" onmouseover="document.getElementById('displayImage').src='pictures/autonomy.jpg'" onmouseout="document.getElementById('displayImage').src='pictures/default.jpg'">
+        Nick's
+        <br/>
+        Depiction
+      </button>
+
+      <button id="comparison" onclick="location.href='comparison.html'" onmouseover="document.getElementById('displayImage').src='pictures/comparison.png'" onmouseout="document.getElementById('displayImage').src='pictures/default.jpg'">
+        Outsider
+        <br/>
+        Comparison
+      </button>
+
+      <button id="praise" onclick="location.href='praise.html'" onmouseover="document.getElementById('displayImage').src='pictures/emerson.png'" onmouseout="document.getElementById('displayImage').src='pictures/default.jpg'">
+        Emerson's
+        <br/>
+        Praise
+      </button>
+    </div>
+
+    <div class="displayImageContainer">
+      <img class="displayImage" id="displayImage" src="">
+    </div>
+    
+    <script>
+      document.getElementById('displayImage').src='pictures/default.jpg';
+    </script>
+  </body>
+</html>
